@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Green Browsing Tracker",
+  "version": "2.0",
+  "description": "Track browsing habits, energy consumption, and carbon footprint with a 7-day carbon chart.",
+  "permissions": ["tabs", "storage", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon-32x32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

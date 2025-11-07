@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Green Browsing Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="icons/icon-32x32.png" alt="logo" class="logo-img">
+      <span class="logo-text">Green Browsing Tracker</span>
+    </div>
+    <p class="tagline">Track your web energy & carbon footprint </p>
+  </header>
+
+  <section class="today">
+    <h2>Today's Summary</h2>
+    <div class="summary">
+      <div><strong>CO₂ Emission:</strong> <span id="today-carbon">0.0000 kg CO₂e</span></div>
+      <div><strong>Energy Used:</strong> <span id="today-energy">0.0000 kWh</span></div>
+    </div>
+  </section>
+
+  <section class="chart-section">
+    <h2>Weekly Carbon & Energy</h2>
+    <canvas id="carbonChart" width="420" height="180"></canvas>
+  </section>
+
+  <section class="forecast">
+    <h2>Annual Forecast</h2>
+    <p><strong>CO₂e / Year:</strong> <span id="forecast-count">–</span></p>
+    <p class="forecast-equivalent"><span id="trees">–</span></p>
+  </section>
+
+  <div class="habits-card">
+  <h3>Browsing Habits</h3>
+  <div>Top Site: <span id="top-used-site">–</span></div>
+  <div>Most Energy Site: <span id="most-energy-site">–</span></div>
+  <div>Avg. Screen Time: <span id="avg-screen-time">0 min/day</span></div>
+  <div>Tip: <span id="optimization-tip">–</span></div>
+</div>
+
+  <footer>
+    <button id="download-csv" class="download-btn"> Download Data (CSV)</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

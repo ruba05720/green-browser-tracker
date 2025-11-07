@@ -1,0 +1,129 @@
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  width: 440px;
+  height: auto;
+  background: linear-gradient(to right, rgb(199, 250, 165), rgb(234, 241, 235));
+  color: #1a1a1a;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  color: #27ae60;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+h2 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #2e7d32;
+  border-bottom: 1px solid #e2f0e5;
+  padding-bottom: 4px;
+}
+
+.today .summary div {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+canvas {
+  width: 100%;
+  border-radius: 8px;
+  background: #eef6f0;
+  border: 1px solid #cde5d4;
+}
+
+.forecast {
+  text-align: center;
+}
+
+.forecast p {
+  margin: 4px 0;
+}
+
+.forecast-equivalent {
+  font-size: 12px;
+  color: #777;
+}
+
+.habits-card {
+  background: #f6fbf6;
+  border: 1px solid #c9e7cc;
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.habits-card h3 {
+  color: #216c38;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #d3e9d7;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.habits-card div {
+  font-size: 13px;
+  color: #333;
+  margin: 3px 0;
+}
+
+.habits-card span {
+  color: #007a4d;
+  font-weight: 500;
+}
+
+
+.download-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #1e8449;
+}
